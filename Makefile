@@ -1,4 +1,4 @@
-KERN_DIR = /work/v3s/linux
+KERN_DIR = /work/linux/linux
 
 all:
 	make -C $(KERN_DIR) M=`pwd` modules CC=arm-linux-gnueabihf-gcc LD=arm-linux-gnueabi-ld ARCH=arm 

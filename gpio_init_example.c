@@ -209,7 +209,7 @@ static struct file_operations drv_fops = {
 
 static int drv_init(void)
 {
-	init_timer(&buttons_timer);
+	timer_setup(&buttons_timer,NULL,0);
 	buttons_timer.function = buttons_timer_function;
 	//buttons_timer.expires  = 0;
 	//setup_timer(&buttons_timer, buttons_timer_function, 0);
